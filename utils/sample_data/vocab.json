@@ -1,0 +1,35 @@
+{
+    "-OCzaFLVCryVWNjLT3h5": {
+      "category": "Apple",
+      "description": "custom-designed System on a Chip (SoC) that integrate the CPU, GPU, Neural Engine, IO, and more onto a single chip. Built using advanced 5-nanometer process technology, the M-series delivers exceptional performance, outstanding battery life, and seamless integration",
+      "firebaseKey": "-OCzaFLVCryVWNjLT3h5",
+      "title": "M Chip",
+      "uid": "",
+      "vocab_id": "2222"
+    },
+    "-OCzc36Ql0mNuizVfaw8": {
+      "category": "Apple",
+      "description": "a high-performance, general-purpose programming language developed by Apple for building software across its platforms, including iOS, macOS, watchOS, and tvOS.",
+      "firebaseKey": "-OCzc36Ql0mNuizVfaw8",
+      "title": "Swift",
+      "uid": "",
+      "vocab_id": "4444"
+    },
+    "-OCzdakDc7rw878RjAHQ": {
+      "category": "Microsoft",
+      "description": "a cloud computing platform that provides a range of services like storage, computing power, databases, and AI tools. It helps businesses build, deploy, and manage applications and services online, offering scalability, security, and flexibility.",
+      "firebaseKey": "-OCzdakDc7rw878RjAHQ",
+      "title": "Azure",
+      "uid": "",
+      "vocab_id": "8888"
+    },
+    "-OCzeod2MBv19K_yHfYm": {
+      "category": "Microsoft",
+      "description": "an operating system that manages a computer's hardware and software, and allows users to complete tasks like browsing the web, working with documents, and playing games",
+      "firebaseKey": "-OCzeod2MBv19K_yHfYm",
+      "title": "Windows",
+      "uid": "",
+      "vocab_id": "101010"
+    }
+
+}
