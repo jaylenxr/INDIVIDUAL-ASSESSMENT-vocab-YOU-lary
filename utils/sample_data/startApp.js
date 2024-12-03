@@ -16,7 +16,7 @@ const startApp = (user) => {
   navEvents(user);
   vocabEvents(user);
   logoutButton();
-  getVocab(user).then((vocab) => showVocabCards(vocab));
+  getVocab(user.uid).then((vocab) => showVocabCards(vocab));
 };
 
 export default startApp;
