@@ -70,27 +70,32 @@ const deleteVocab = (firebaseKey) => new Promise((resolve, reject) => {
 });
 
 // FILTER Cards
-const getApple = () => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/vocab.json?orderBy="category"&equalTo="Apple"`, {
+const getApple = (uid) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocab.json?orderBy="uid"&equalTo="${uid}"`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
     },
   })
     .then((response) => response.json())
-    .then((data) => resolve(Object.values(data)))
+    .then((data) => {
+      const js = Object.values(data).filter((obj) => obj.category === 'Apple');
+      resolve(js);
+    })
     .catch(reject);
 });
-
-const getMicrosoft = () => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/vocab.json?orderBy="category"&equalTo="Microsoft"`, {
+const getMicrosoft = (uid) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocab.json?orderBy="uid"&equalTo="${uid}"`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
     },
   })
     .then((response) => response.json())
-    .then((data) => resolve(Object.values(data)))
+    .then((data) => {
+      const html = Object.values(data).filter((obj) => obj.category === 'Microsoft');
+      resolve(html);
+    })
     .catch(reject);
 });
 

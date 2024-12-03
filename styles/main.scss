@@ -3,8 +3,245 @@
 
 
 body {
-  background-color: antiquewhite;
-  color: brown;
+  background-color: rgba(151, 229, 216, 0.585);
+  color: rgb(48, 86, 64);
   text-align: center;
   margin-top: 100px;
+  font-family: 'Stylish', sans-serif;
+  font-size: 18px;
+
+}
+
+h1 {
+  font-family: "Tiny5", sans-serif;
+  font-size: 60px;
+}
+
+#vocabStyle {
+  background-color: #88c0ba;
+  border-radius: 5%;
+  color: #3a5340!important;
+  font-family: "Mynerve", static;
+  font-weight: 100;
+  font-size: 18px;
+}
+
+#store {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 1%;
+  row-gap: 10px;
+  margin-top: 20px;
+}
+
+#logo2 {
+  font-family: "Tiny5", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  color: #2f3c2f; /* Base color for the text */
+  text-shadow:
+    0px 0px 8px rgba(146, 196, 81, 0.5),   /* Greenish glow */
+    0px 0px 12px rgba(146, 196, 81, 0.5),
+    0px 0px 16px rgb(48, 86, 64),
+    0px 0px 24px rgb(48, 86, 64);
+  transition: text-shadow 0.3s ease-in-out;}
+
+#create-entry {
+  font-family: 'Stylish', sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  color: #2d3a30!important;
+  // text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease-in-out;
+  position: relative;
+  flex: none;
+  text-align: left;
+}
+
+/* Enhanced Hover Effect */
+#create-entry:hover {
+  color: #ff7a18;
+  transform: scale(1.1);
+  transition: transform 0.3s, color 0.3s, box-shadow 0.3s ease-in-out;
+  box-shadow: 0px 4px 15px rgba(146, 196, 81, 0.5);
+}
+
+/* Underline Effect */
+#create-entry::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(90deg, #8d9c20, #2d633b, #8d9c20);
+  background-size: 200% 100%;
+  transition: width 0.3s ease-in-out, background-position 0.5s ease;
+  transform: translateX(-50%);
+}
+
+#navContainer {
+  text-decoration: none;
+  font-weight: bolder;
+  color: #fff;
+  font-size: 18px;
+  position: relative;
+  padding: 5px 0;
+  display: inline-block;
+  transition: color 0.3s ease;
+  flex: 1;
+  text-align: right;
+}
+
+#navContainer ::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(90deg, #8d9c20, #2d633b, #8d9c20);
+  background-size: 200% 100%;
+  transition: width 0.3s ease-in-out, background-position 0.5s ease;
+  transform: translateX(-50%);
+}
+
+#navContainer :hover {
+  color: #ff7a18;
+  transform: scale(1.1);
+  transition: transform 0.3s, color 0.3s, box-shadow 0.3s ease-in-out;
+  box-shadow: 0px 4px 15px rgba(255, 122, 24, 0.5);
+}
+
+#navContainer :hover ::after{
+  width: 100%;
+  background-position: 100% 0;
+}
+
+#navContainer :hover {
+  color: #8d9c20;
+  transform: scale(1.1);
+  transition: transform 0.3s, color 0.3s, box-shadow 0.3s ease-in-out;
+  box-shadow: 0px 4px 15px rgba(146, 196, 81, 0.5);
+}
+
+#my-cards, #apple, #microsoft {
+  font-family: 'Stylish', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #2d3a30!important;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#google-auth {
+  font-family: "Tiny5", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 24px;
+  background-color: rgba(146, 196, 81, 0.8);
+  color: #3a5340;
+  border: 2px solid rgba(146, 196, 81, 0.8);
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(146, 196, 81, 0.5), 0px 0px 15px rgba(146, 196, 81, 0.7);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+#google-auth:hover {
+  background-color: rgba(146, 196, 81, 1);
+  border-color: rgba(146, 196, 81, 1);
+  box-shadow: 0px 0px 15px rgba(146, 196, 81, 0.7), 0px 0px 20px rgba(48, 86, 64, 0.7);
+  transform: scale(1.05);
+}
+
+
+#google-auth:focus {
+  outline: none;
+  box-shadow: 0px 0px 15px rgba(146, 196, 81, 0.8), 0px 0px 25px rgba(48, 86, 64, 0.8);
+}
+
+.btn1, .btn2 {
+  font-family: "Tiny5", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(54, 65, 41, 0.8);
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  bottom: 10px;
+  text-decoration: none; /* Optional: Remove underline */
+}
+
+/* Edit Button Styling (Text-Only) */
+.btn1 {
+  left: 10px;
+  box-shadow: 0px 0px 8px rgba(146, 196, 81, 0.5), 0px 0px 12px rgba(146, 196, 81, 0.7);
+}
+
+.btn1:hover {
+  color: rgb(78, 114, 30);
+  box-shadow: 0px 0px 15px rgba(146, 196, 81, 0.7), 0px 0px 20px rgba(48, 86, 64, 0.7);
+  transform: scale(1.1); /* Slight pop-out effect */
+}
+
+.btn2 {
+  right: 10px;
+  box-shadow: 0px 0px 8px rgba(146, 196, 81, 0.5), 0px 0px 12px rgba(146, 196, 81, 0.7);
+}
+
+.btn2:hover {
+  color: rgb(78, 114, 30);
+  box-shadow: 0px 0px 15px rgba(146, 196, 81, 0.7), 0px 0px 20px rgba(48, 86, 64, 0.7);
+  transform: scale(1.1);
+}
+
+.mb-4 {
+  font-family: "Mynerve", static;
+  font-weight: 100;
+  font-size: 18px;
+
+}
+.btn {
+  font-family: "Tiny5", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+/* "Add Card" Button Styling */
+.btn-primary {
+  background-color: rgba(146, 196, 81, 0.8); /* Soft green base */
+  box-shadow: 0px 0px 8px rgba(146, 196, 81, 0.5), 0px 0px 12px rgba(146, 196, 81, 0.7); /* Soft green glow */
+}
+
+.btn-primary:hover {
+  background-color: rgba(146, 196, 81, 1); /* Intensified green on hover */
+  box-shadow: 0px 0px 15px rgba(146, 196, 81, 0.7), 0px 0px 20px rgba(48, 86, 64, 0.7); /* Enhanced green and dark green glow */
+  transform: scale(1.1); /* Slight pop-out effect */
+}
+
+#cardTitle {
+  font-size: 32px;
+}
+
+#tech-category{
+  font-size: 20px;
+  font-weight: bolder;
 }

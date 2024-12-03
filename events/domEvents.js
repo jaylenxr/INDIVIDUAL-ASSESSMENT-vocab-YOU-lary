@@ -1,4 +1,4 @@
-import { getVocab } from '../api/vocabData';
+import { getVocab, getApple, getMicrosoft } from '../api/vocabData';
 import newVocabForm from '../components/forms/addNewVocab';
 import showVocabCards from '../pages/vocab';
 import clearDom from '../utils/clearDom';
@@ -15,6 +15,14 @@ const domEvents = (user) => {
     if (e.target.id.includes('logo')) {
       clearDom();
       getVocab(user).then((vocab) => showVocabCards(vocab));
+    }
+    if (e.target.id.includes('apple')) {
+      clearDom();
+      getApple(user).then((vocab) => showVocabCards(vocab));
+    }
+    if (e.target.id.includes('microsoft')) {
+      clearDom();
+      getMicrosoft(user).then((vocab) => showVocabCards(vocab));
     }
   });
 };

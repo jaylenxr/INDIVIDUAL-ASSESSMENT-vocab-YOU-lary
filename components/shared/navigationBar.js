@@ -2,7 +2,7 @@ import renderToDom from '../../utils/renderToDom';
 
 const navBar = () => {
   const domString = `
-    <nav class="navbar fixed-top navbar-expand-lg mb-5" id="navbarStyle">
+    <nav class="navbar fixed-top navbar-expand-lg mb-5" id="nav">
     <div class="container-fluid" id="containerFluid">
         <a class="navbar-brand title" href="" id="logo2">Tech To Me</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,7 +18,7 @@ const navBar = () => {
             <div class="nav-container" id="navContainer">
   <button type="button" id="my-cards" class="btn">My Cards</button>
   <button type="button" id="apple" class="btn">Apple </button>
-  <button type="button" id="microsoft" class="btn">Microsoft<i class="fa-brands fa-windows fa-spin"></i></button>
+  <button type="button" id="microsoft" class="btn">Microsoft ⊞</button>
   </div>
           </ul>
           <span class="navbar-text">
