@@ -1,9 +1,9 @@
 import showVocabCards from '../pages/vocab';
-import { getApple, getMicrosoft, getVocab } from '../api/vocabData';
-
+import { getVocab, getApple, getMicrosoft } from '../api/vocabData';
+/* eslint-disable  brace-style, no-spaced-func, func-call-spacing, quotes, semi */
 const navEvents = (user) => {
   document.querySelector('#my-cards').addEventListener('click', () => {
-    getVocab().then(showVocabCards);
+    getVocab(user.uid).then(showVocabCards);
   });
 
   document.querySelector('#apple').addEventListener('click', () => {

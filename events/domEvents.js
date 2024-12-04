@@ -18,11 +18,11 @@ const domEvents = (user) => {
     }
     if (e.target.id.includes('apple')) {
       clearDom();
-      getApple(user).then((vocab) => showVocabCards(vocab));
+      getApple(user.uid).then((vocab) => showVocabCards(vocab));
     }
     if (e.target.id.includes('microsoft')) {
       clearDom();
-      getMicrosoft(user).then((vocab) => showVocabCards(vocab));
+      getMicrosoft(user.uid).then((vocab) => showVocabCards(vocab));
     }
   });
 };
