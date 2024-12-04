@@ -16,7 +16,7 @@ const navBar = () => {
               </button>
             </li>
             <div class="nav-container" id="navContainer">
-  <button type="button" id="my-cards" class="btn">My Cards</button>
+  <button type="button" id="my-cards" class="btn">All Cards</button>
   <button type="button" id="apple" class="btn">Apple </button>
   <button type="button" id="microsoft" class="btn">Microsoft ⊞</button>
   </div>

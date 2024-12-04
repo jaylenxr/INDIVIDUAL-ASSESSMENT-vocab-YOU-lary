@@ -1,10 +1,11 @@
 import client from '../utils/client';
 // Vocab API calls
 const endpoint = client.databaseURL;
+/* eslint-disable  brace-style, no-spaced-func, func-call-spacing, quotes, semi, indent */
 
 // GET VOCAB CARDS
-const getVocab = () => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/vocab.json`, {
+const getVocab = (uid) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocab.json?orderBy="uid"&equalTo= "${uid}"`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -79,8 +80,8 @@ const getApple = (uid) => new Promise((resolve, reject) => {
   })
     .then((response) => response.json())
     .then((data) => {
-      const js = Object.values(data).filter((obj) => obj.category === 'Apple');
-      resolve(js);
+        const js = Object.values(data).filter((obj) => obj.category === 'Apple');
+    resolve(js);
     })
     .catch(reject);
 });

@@ -4,7 +4,7 @@ import { signIn } from '../utils/auth';
 const loginButton = () => {
   const domString = `
     <h1>TECH TO ME!</h1>
-    <h4>Learn software & tech features created by leading tech companies</h4>
+    <h4>Learn software & tech features created by the world's leading tech companies.</h4>
     <button id="google-auth" class="btn btn-danger">GOOGLE LOGIN</button>
   `;
 
